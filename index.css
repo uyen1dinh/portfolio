@@ -8,7 +8,8 @@ body {
 }
 
 header, footer {
-    flex: 1;
+    flex: 2;
+    background-color: cornflowerblue;
 }
 
 li a {
@@ -19,7 +20,7 @@ li a {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: cornflowerblue;
+    
 }
 
 nav img {
@@ -43,7 +44,7 @@ nav ul li {
 /* MAIN CSS */
 
 main {
-    flex: 8;
+    flex: 6;
     display: flex;
     flex-direction: column;
 }
@@ -96,7 +97,7 @@ main {
 h2 {
     text-align: center;
     font-size: 35px;
-    margin: 50px;
+    margin: 75px;
 }
 
 /* post it notes styling: https://webdesign.tutsplus.com/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934t */
@@ -114,11 +115,34 @@ h2 {
     color: black;
     background: #ffc;
     display: block;
-    height: 20em;
-    width: 20em;
+    height: 30em;
+    width: 30em;
     padding: 1em;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     transform: rotate(-6deg);
+}
+
+.project-list li a::before {
+    content: "🔗"; /* Link icon */
+    position: absolute;
+    top: -2em; /* Position above the post-it note */
+    right: 0.5em;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-size: 2em;
+}
+
+.project-list li a:hover::before {
+    opacity: 1; /* Show the bubble on hover */
 }
 
 .project-list li a::after {
