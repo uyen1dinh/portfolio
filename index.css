@@ -19,8 +19,11 @@ li a {
 /* NAVIGATION CSS  */
 nav {
     display: flex;
-    justify-content: space-between;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: cornflowerblue; 
+    z-index: 1000;
 }
 
 nav img {
@@ -32,6 +35,8 @@ nav img {
 }
 
 nav ul {
+    text-align: right;
+    margin-right: 10px;
     flex: 2;
     display: flex;
     list-style-type: none;
@@ -49,18 +54,41 @@ main {
     flex-direction: column;
 }
 
+
+/* ABOUT ME CSS */
+
+#about-me {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 100px;
+    text-align: center;
+}
+
+#about-me img {
+    width: 300px;
+    border: 2px solid black;
+}
+
+#about-me section h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#about-me section p {
+    font-size: 25px;
+}
+
+#about-me h3 {
+    margin: 0;
+}
+
 /* profile css: SVG MDN DOCS */
 
 #profile {
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
-}
-
-#profile img {
-    margin: 10px;
-    width: 300px;
+    justify-content: center;
 }
 
 #profile-text {
@@ -95,19 +123,22 @@ main {
 
 .education-container {
     display: flex;
+    justify-content: center; 
+    align-items: center; 
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .education-img img {
-    width: 750px;
-    margin: 10px;
+    width: 600px;
     border: 2px solid black;
 }
 
 .education-img {
     font-size: 20px;
+
     text-align: center;
+    margin: 5px;
 }
 
 .education-img div {
@@ -124,14 +155,14 @@ main {
     flex: 1;
 }
 
-h3 {
-    font-size: 40px;
-    margin-top: 2px;
-    margin-bottom: 0;
+.education-text {
+    width: 750px;
+    margin-left: 100px;
 }
 
-.education-text {
-    margin-left: 5em;
+h3 {
+    font-size: 40px;
+    margin: 0;
 }
 
 .education-text p {
@@ -141,6 +172,11 @@ h3 {
 
 dl {
     font-size: 20px;
+    display: flex;
+}
+
+dl div {
+    flex: 1;
 }
 
 dt {
@@ -153,7 +189,7 @@ dd {
 }
 
 
-/* PROEJCTS CSS */
+/* PROJECTS CSS */
 
 h2 {
     text-align: center;
