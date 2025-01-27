@@ -5,11 +5,11 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background: #ffe8bc;
 }
 
 header, footer {
     flex: 2;
-    background-color: cornflowerblue;
 }
 
 li a {
@@ -22,8 +22,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: cornflowerblue; 
-    z-index: 1000;
+    background-color: #f7d29b;
+    z-index: 2;
 }
 
 nav img {
@@ -60,7 +60,7 @@ main {
 #about-me {
     display: flex;
     justify-content: space-around;
-    margin: 100px 100px;
+    margin: 50px;
     text-align: center;
 }
 
@@ -89,10 +89,27 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffe8bc; 
+}  
+
+#profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%),
+                linear-gradient(to bottom, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%);
+    background-size: 60px 60px; 
+    z-index: 0;  
 }
 
 #profile-text {
+    background-color: rgb(252, 242, 229);
     max-width: 60%;
+    z-index: 1;
+    border-radius: 20px;
 }
 
 #profile-text p {
@@ -126,7 +143,8 @@ main {
     justify-content: center; 
     align-items: center; 
     width: 100%;
-    margin-top: 50px;
+    padding: 50px 50px;
+    background-color: #fedba6;
 }
 
 .education-img img {
@@ -205,12 +223,12 @@ h2 {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .project-list li a {
     color: black;
-    background: #ffc;
+    background: rgb(246, 246, 235);
     display: block;
     height: 30em;
     width: 30em;
@@ -253,14 +271,14 @@ h2 {
     transform: rotate(4deg);
     position: relative;
     top: 5px;
-    background:#cfc;
+    background:#ffbbb1;
 }
   
 .project-list li:nth-child(3n) a{
     transform: rotate(-3deg);
     position: relative;
     top: -5px;
-    background:#ccf;
+    background:#b3daf1;
 }
   
 .project-list li:nth-child(5n) a{
