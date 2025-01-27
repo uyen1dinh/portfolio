@@ -5,7 +5,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: #ffe8bc;
+    background: #fffbf6;
 }
 
 header, footer {
@@ -90,6 +90,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #ffe8bc; 
+    border-bottom: 2px solid #fedba6;
 }  
 
 #profile::before {
@@ -101,7 +102,7 @@ main {
     height: 100%;
     background: linear-gradient(to right, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%),
                 linear-gradient(to bottom, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%);
-    background-size: 60px 60px; 
+    background-size: 40px 40px; 
     z-index: 0;  
 }
 
