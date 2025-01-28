@@ -5,7 +5,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: #fffbf6;
+    background: rgb(252, 242, 229);
+    color: rgb(99, 72, 41);
 }
 
 header, footer {
@@ -62,11 +63,20 @@ main {
     justify-content: space-around;
     margin: 50px;
     text-align: center;
+    height: 50vh;
 }
 
 #about-me img {
     width: 300px;
-    border: 2px solid black;
+    border: 2px solid rgb(159, 122, 73);
+}
+
+.about-me-img {
+    flex: 1;
+}
+
+.about-me-text {
+    flex: 2;
 }
 
 #about-me section h3 {
@@ -76,11 +86,9 @@ main {
 
 #about-me section p {
     font-size: 25px;
+    color: rgb(91, 40, 40);
 }
 
-#about-me h3 {
-    margin: 0;
-}
 
 /* profile css: SVG MDN DOCS */
 
@@ -124,8 +132,9 @@ main {
 }
 
 .path {
-    stroke: black;
-    stroke-width: 2;
+    stroke: rgb(228, 114, 85);
+    stroke-width: 3;
+    fill: rgb(235, 156, 150);
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 10s forwards;
@@ -146,11 +155,12 @@ main {
     width: 100%;
     padding: 50px 50px;
     background-color: #fedba6;
+    color: rgb(58, 42, 32);
 }
 
 .education-img img {
     width: 600px;
-    border: 2px solid black;
+    border: 2px solid rgb(114, 72, 43);
 }
 
 .education-img {
@@ -162,16 +172,14 @@ main {
 
 .education-img div {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.education-img div p {
-    flex: 3;
-}
-
-.social {
-    margin-left: 2px;
-    flex: 1;
+.social .icons {
+    width: 35px;
+    border: none;
+    margin: 2px;
 }
 
 .education-text {
@@ -214,6 +222,7 @@ h2 {
     text-align: center;
     font-size: 35px;
     margin: 75px;
+    color: rgb(72, 50, 36);
 }
 
 /* post it notes styling: https://webdesign.tutsplus.com/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934t */
@@ -229,13 +238,17 @@ h2 {
 
 .project-list li a {
     color: black;
-    background: rgb(246, 246, 235);
+    background: rgb(223, 209, 239);
     display: block;
     height: 30em;
     width: 30em;
     padding: 1em;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     transform: rotate(-6deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-list li a::before {
@@ -265,6 +278,7 @@ h2 {
     content: "🌼";
     position: absolute;
     bottom: 0.5em;
+    left: 0.5em;
     font-size: 1.5em;
 }
 
@@ -290,4 +304,14 @@ h2 {
   
 .project-list li {
     margin: 2em;
+}
+
+.post-it-images {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.schedule-generator {
+    width: 90%;
+    height: 75%;
 }
