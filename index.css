@@ -1,0 +1,348 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(252, 242, 229);
+    color: rgb(99, 72, 41);
+
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* NAVIGATION CSS  */
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f7d29b;
+    z-index: 2;
+}
+
+nav img {
+    flex: 1;
+    display: flex;
+    padding-left: 10px;
+    justify-content: left;
+    align-items: center
+}
+
+nav ul {
+    text-align: right;
+    margin-right: 10px;
+    flex: 2;
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+/* MAIN CSS */
+
+main {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ABOUT ME CSS */
+
+#about-me {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    text-align: center;
+    height: 50vh;
+}
+
+#about-me img {
+    width: 300px;
+    border: 2px solid rgb(159, 122, 73);
+}
+
+.about-me-img {
+    flex: 1;
+}
+
+.about-me-text {
+    flex: 2;
+}
+
+#about-me section h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#about-me section p {
+    font-size: 25px;
+    color: rgb(91, 40, 40);
+}
+
+
+/* profile css: SVG MDN DOCS */
+
+#profile {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe8bc; 
+    border-bottom: 2px solid #fedba6;
+}  
+
+#profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%),
+                linear-gradient(to bottom, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%);
+    background-size: 40px 40px; 
+    z-index: 0;  
+}
+
+#profile-text {
+    background-color: rgb(252, 242, 229);
+    max-width: 60%;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#profile-text p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.responsive-svg {
+    width: 100%; 
+    height: 150px;
+}
+
+.path {
+    stroke: rgb(228, 114, 85);
+    stroke-width: 3;
+    fill: rgb(235, 156, 150);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 10s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* EDUCATION CSS */
+
+.education-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    padding: 50px 50px;
+    background-color: #fedba6;
+    color: rgb(58, 42, 32);
+}
+
+.education-img img {
+    width: 300px;
+    border: 2px solid rgb(114, 72, 43);
+}
+
+.education-img {
+    font-size: 20px;
+
+    text-align: center;
+    margin: 5px;
+}
+
+.education-img div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social .icons {
+    width: 35px;
+    border: none;
+    margin: 2px;
+}
+
+.education-text {
+    width: 750px;
+    margin-left: 100px;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.education-text p {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+dl {
+    font-size: 20px;
+    display: flex;
+}
+
+dl div {
+    flex: 1;
+}
+
+dt {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+
+/* PROJECTS CSS */
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 75px;
+    color: rgb(72, 50, 36);
+}
+
+/* post it notes styling: https://webdesign.tutsplus.com/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934t */
+.project-list, li {
+    list-style-type: none;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.project-list li a {
+    color: black;
+    background: rgb(223, 209, 239);
+    display: block;
+    height: 30em;
+    width: 30em;
+    padding: 1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.project-link li a::before {
+    content: "🔗"; /* Link icon */
+    position: absolute;
+    top: -2em; /* Position above the post-it note */
+    right: 0.5em;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0.5em;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-size: 2em;
+}
+
+.project-list li a:hover::before {
+    opacity: 1; /* Show the bubble on hover */
+}
+
+.project-list li a::after {
+    content: "🌼";
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    font-size: 1.5em;
+}
+
+.project-list li:nth-child(even) a{
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+    background:#ffbbb1;
+}
+  
+.project-list li:nth-child(3n) a{
+    transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+    background:#b3daf1;
+}
+  
+.project-list li:nth-child(5n) a{
+    transform: rotate(5deg);
+    position: relative;
+    top: -10px;
+}
+  
+.project-list li {
+    margin: 2em;
+}
+
+.post-it-images {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.schedule-generator {
+    width: 90%;
+    height: 75%;
+}
+
+footer {
+    position: relative;
+    margin-top: 10px;
+    height: 150px;
+    background-color: #ffe8bc;
+    z-index: 1; 
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%),
+                linear-gradient(to bottom, #fedba6 10%, transparent 10%, transparent 50%, #ffe8bc 50%, #ffe8bc 60%, transparent 60%, transparent 100%);
+    background-size: 40px 40px; 
+    z-index: 0; 
+}

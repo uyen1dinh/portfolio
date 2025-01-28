@@ -1,10 +1,164 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> HI </title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="mobile.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+        <title> Michelle's Portfolio </title>
     </head>
 
     <body>
-        <h1> HELLO </h1>
+        <main>
+            <section id="profile">
+                <section id="profile-text">
+                    <div class="greeting-container"> 
+                        <svg viewBox="0 0 800 150" preserveAspectRatio="xMidYMid meet" class="responsive-svg"> 
+                            <text   x="50%" 
+                                    y="50%" 
+                                    font-family="Verdana" 
+                                    font-size="60" 
+                                    fill="none" 
+                                    stroke="black" 
+                                    stroke-width="1" 
+                                    class="path" 
+                                    text-anchor="middle" 
+                                    dominant-baseline="middle">
+                                    Hi, I'm Michelle Banh
+                            </text>
+                        </svg>
+                        <p> Junior Software Developer </p>
+                    </div>
+                </section>
+            </section>
+            
+            <section id="about-me">
+                <section class="about-me-text">
+                    <h3> About me </h3>
+                    <p> I'm a curious student living in Quebec and currently studying Computer Science. I have a strong interest in software development and I am committed to providing useful yet visually pleasing for users. I look forward to exploring various sectors in the tech industry where I can improve and feel the satisfaction of my work. </p>
+                </section>
+                <section class="about-me-img">
+                    <img src="assets/placeholder.jpg" alt="img"/>
+                </section>
+            </section>
+
+            <section id="education">
+                <section class="education-container">
+                    <div class="education-img">
+                        <img src="assets/graduate.jpg" alt="img of me graduating"/>
+                        
+                        <div>
+                            <p> Computer Science Program </p>
+                            <div class="social">
+                                <a href="https://gitlab.com/DiscordMod"> <img  class="icons" src="assets/gitlab.svg" alt="" > </a>
+                                <a href="https://www.linkedin.com/in/uyen-dinh-michelle-banh-1a820233a/"> <img  class="icons" src="assets/LinkedIn_icon.svg" alt="" > </a>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div class="education-text">
+                        <h3> Education - Skills taught </h3>
+                        <p> Dawson College (2022 - Present) </p>
+                        <dl>
+                            <div>
+                                <dt> Front End & Design </dt>
+                                <dd> - HTML </dd>
+                                <dd> - JS </dd>
+                                <dd> - CSS </dd>
+                                <dd> - React </dd>
+                                <dd> - Photoshop </dd>
+                                <dd> - Figma </dd>
+                            </div>
+                            
+                            <div>
+                                <dt> Back End </dt>
+                                <dd> - C# </dd>
+                                <dd> - Java </dd>
+                                <dd> - Python </dd>
+                                <dd> - SQL </dd>
+                                <dd> - Express </dd>
+                            </div>
+
+                            <div>
+                                <dt> Tools </dt>
+                                <dd> - Git </dd>
+                                <dd> - AWS </dd>
+                                <dd> - Docker </dd>
+                            </div>
+                            
+                        </dl>
+                    </div>
+                </section>
+            </section>
+
+            <section id="projects">
+                <h2> Personal Projects </h2>
+                <ul class="project-list project-link">
+                    <li>
+                        <a href="https://five20-project-do-kim-banh.onrender.com/">
+                            <h3> Game Review </h3>
+                            <p> Website that displays the reviews and the sales of a given game in 2018 </p>
+                            <img class="post-it-images" src="assets/game-review.png" alt="game review home page"/>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://kunyro.itch.io/buffer-breakfast"> 
+                            <h3> Breakfast Buffers </h3>
+                            <p> Game that teaches basic buffer concepts to university students </p>
+                            <img class="post-it-images" src="assets/breakfast-buffer.png" alt="breakfast buffer home page"/>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://gitlab.com/DiscordMod/dawhacks2024_studyapp"> 
+                            <h3> Schedule generator </h3>
+                            <p> Creates a calendar from supplied course outlines </p>
+                            <img class="post-it-images schedule-generator" src="assets/schedule-generator.png" alt="schedule generator home page"/>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h2> Interests </h2>
+                
+                <ul class="project-list">
+                    <li>
+                        <a>
+                            <h3> Puzzle Games </h3>
+                            <p> Other than coding, I really like puzzles games!</p>
+                            <p> such as Fran Bow or Little Misfortune! </p>
+                            <p> I also really like escape rooms  </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a> 
+                            <h3> Karate </h3>
+                            <p> I regularly practice shotokan karate and this sport has been present for a long time in my life </p>
+                            <img class="post-it-images" src="assets/karate.jpg" alt="seminar karate picture"/>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a> 
+                            <h3> Drawing </h3>
+                            <p> I really enjoy drawing little doodles on procreate and designing web applications for fun! </p>
+                        </a>
+                    </li>
+                </ul>
+                   
+            </section>
+        </main>
+
+        <footer>
+            <div> 
+                <p> 
+                    © 2025 Michelle Banh,
+                    you can reach me by <a href="https://www.linkedin.com/in/uyen-dinh-michelle-banh-1a820233a/"> Linkedln </a>
+                </p> 
+            </div>
+        </footer>
+
     </body>
 </html>

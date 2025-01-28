@@ -1,0 +1,61 @@
+@media screen and (max-width: 1300px) {
+    .education-img img {
+        
+        margin: 0;
+    }
+
+    .education-text {
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #about-me section p {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+
+    .education-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+    }
+
+    .education-img {
+        margin: 10px 10px;
+    }
+    
+    dl {
+        display: inline;
+        
+    }
+    
+    dd {
+        margin-right: 50px;
+    }
+    
+    .project-list {
+        padding: 0;
+    }
+    
+    .project-list li a {
+        width: 25em;
+        height: 25em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .education-img img {
+        width: 400px;
+    }
+}
