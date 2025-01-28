@@ -1,6 +1,6 @@
 @media screen and (max-width: 1300px) {
     .education-img img {
-        width: 500px;
+        
         margin: 0;
     }
 
@@ -20,6 +20,7 @@
     .education-container {
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 }
 
@@ -29,11 +30,7 @@
         flex-direction: column;
         height: 75vh;
     }
-    
-    .education-container {
-        padding: 0;
-    }
-    
+
     .education-img {
         margin: 10px 10px;
     }
